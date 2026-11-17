@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+  <!-- Affliliate mark: the peak from Logo.tsx — a white reading climbing to
+       its high point over a pink dot, for "every casino offer, decoded".
+
+       The header draws it as a full blue disc. Here it sits on a rounded tile
+       instead: a circular favicon loses its silhouette against a browser tab,
+       and 10/42 is the roundest corner that still reads as a square at 16px.
+       The peak is drawn a little heavier than the header's (4.6 against 4) so
+       it survives that size.
+
+       The first <rect fill> is read by app/apple-icon.tsx as the background
+       plate, so it must stay the first element. src/app/favicon.ico is the
+       same artwork rasterised at 16/32/48 — see scripts/make-favicon.py. -->
+  <rect width="42" height="42" rx="10" fill="#2b3fe0"/>
+  <path d="M11 30 L21 12 L31 30" fill="none" stroke="#ffffff" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="21" cy="25.4" r="3.6" fill="#ffa8cc"/>
+</svg>
