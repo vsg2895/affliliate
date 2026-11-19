@@ -254,9 +254,11 @@ export const COPY = {
     // address in the footer is what mailbox providers and the gambling
     // affiliate compliance checks both look for, and it must match the address
     // used in the email templates.
-    // Blank until the operator supplies one — the footer omits the whole
-    // <address> element rather than printing a placeholder. See layout.tsx.
-    postalAddress: '',
+    // Supplied 2026-11-18. Must stay identical to this site's
+    // `registered_address` in the admin (Sites -> Edit -> Legal identity),
+    // which is what the legal pages and the email templates print: two
+    // different addresses for one brand is a compliance problem, not a typo.
+    postalAddress: '18 Ashfield Road, Manchester, M14 6TW, United Kingdom',
     disclaimer:
       'Gambling is for adults aged 18 or over and carries real financial risk. Set deposit limits, never chase losses, and only stake what you can afford to lose.',
   },

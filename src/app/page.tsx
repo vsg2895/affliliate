@@ -138,7 +138,7 @@ export default async function HomePage({ searchParams }: Props) {
             The slab is inset by the same gutter as the header pill and the
             footer, so all three line up down both edges of the page. */}
         <section className="px-2 sm:px-4">
-          <div className="slab mx-auto max-w-[1240px] px-5 py-14 sm:px-10 sm:py-20">
+          <div className="slab mx-auto max-w-[1440px] px-5 py-14 sm:px-10 sm:py-20">
             <div className="relative z-[1] grid grid-cols-1 items-center gap-10 min-[57rem]:grid-cols-[minmax(0,1.25fr)_minmax(0,1fr)] min-[57rem]:gap-14">
               <div>
                 <p className="live inline-flex items-center gap-2.5 rounded-full bg-white/15 px-[18px] py-2 text-[12.5px] font-bold uppercase tracking-[0.16em] text-white">
@@ -227,7 +227,7 @@ export default async function HomePage({ searchParams }: Props) {
             Decorative and `aria-hidden`: the track holds the phrases twice so
             the loop has no seam, and a screen reader would read all of them
             twice. It stops dead under prefers-reduced-motion (globals.css). */}
-        <div className="overflow-hidden py-6" aria-hidden>
+        <div className="band overflow-hidden py-6" aria-hidden>
           <div className="band-track">
             {[0, 1].map((copy) =>
               COPY.home.bandPhrases.map((phrase) => (
@@ -242,7 +242,7 @@ export default async function HomePage({ searchParams }: Props) {
 
         {/* The ranking — category chips, then the casinos as rows. */}
         <section className="pb-14 pt-6 sm:pb-[72px]" aria-labelledby="top-casinos-heading">
-          <div className="mx-auto max-w-[1200px] px-4">
+          <div className="mx-auto max-w-[1400px] px-4">
             <p className="text-[13px] font-extrabold uppercase tracking-[0.16em] text-brand">{COPY.home.rankingLabel}</p>
             <h2 id="top-casinos-heading" className="mt-3 font-display text-[32px] leading-[1.05] text-ink sm:text-[clamp(34px,4.4vw,54px)]">
               {COPY.home.topCasinosTitle}
@@ -280,7 +280,7 @@ export default async function HomePage({ searchParams }: Props) {
         {/* Bonus types as one stacked bar. Renders nothing without a Bonus area. */}
         {bonusSections.length > 0 && (
           <section className="pb-14 sm:pb-[72px]">
-            <div className="mx-auto max-w-[1200px] px-4">
+            <div className="mx-auto max-w-[1400px] px-4">
               <BonusCategoryNav sections={bonusSections} />
             </div>
           </section>
@@ -291,7 +291,7 @@ export default async function HomePage({ searchParams }: Props) {
             area keeps the flat grid below. */}
         {bonusSections.length > 0 ? (
           <section className="py-14 sm:py-[72px]" aria-labelledby="bonus-heading">
-            <div className="mx-auto max-w-[1200px] px-4">
+            <div className="mx-auto max-w-[1400px] px-4">
               <div className="flex flex-wrap items-end justify-between gap-4">
                 <h2 id="bonus-heading" className="font-display text-[32px] leading-[1.05] text-ink sm:text-[clamp(34px,4.4vw,54px)]">
                   {COPY.home.bonus}
@@ -305,7 +305,7 @@ export default async function HomePage({ searchParams }: Props) {
           </section>
         ) : topOffers.length > 0 && (
           <section className="py-14 sm:py-[72px]" aria-labelledby="offers-heading">
-            <div className="mx-auto max-w-[1200px] px-4">
+            <div className="mx-auto max-w-[1400px] px-4">
               <div className="flex flex-wrap items-end justify-between gap-4">
                 <h2 id="offers-heading" className="font-display text-[32px] leading-[1.05] text-ink sm:text-[clamp(34px,4.4vw,54px)]">
                   {COPY.home.specialOffers}
@@ -325,7 +325,7 @@ export default async function HomePage({ searchParams }: Props) {
 
         {/* How we rank — the stages of a review, as cards. */}
         <section className="px-2 py-14 sm:px-4 sm:py-[72px]" aria-labelledby="method-heading">
-          <div className="mx-auto max-w-[1240px] rounded-[24px] bg-surface px-5 py-12 sm:rounded-[32px] sm:px-10">
+          <div className="mx-auto max-w-[1440px] rounded-[24px] bg-surface px-5 py-12 sm:rounded-[32px] sm:px-10">
             <p className="text-[13px] font-extrabold uppercase tracking-[0.16em] text-brand">{COPY.home.methodLabel}</p>
             <h2 id="method-heading" className="mt-3 font-display text-[32px] leading-[1.05] text-ink sm:text-[clamp(34px,4.4vw,54px)]">
               {COPY.home.methodTitle}
@@ -356,7 +356,7 @@ export default async function HomePage({ searchParams }: Props) {
             mockup. Every answer is in the HTML, open or closed, which the
             FAQPage schema above requires. */}
         <section className="pb-4 pt-14 sm:pt-[72px]" aria-labelledby="faq-heading">
-          <div className="mx-auto max-w-[1200px] px-4">
+          <div className="mx-auto max-w-[1400px] px-4">
             <p className="text-[13px] font-extrabold uppercase tracking-[0.16em] text-brand">{COPY.home.faqLabel}</p>
             <h2 id="faq-heading" className="mt-3 font-display text-[32px] leading-[1.05] text-ink sm:text-[clamp(34px,4.2vw,52px)]">
               {COPY.home.faqTitle}

@@ -76,7 +76,7 @@ export default async function CasinosPage({ searchParams }: Props) {
   if (!selected) {
     return (
       <main className="pb-12 pt-6 sm:pb-16 sm:pt-10">
-        <div className="mx-auto max-w-[1200px] px-4">
+        <div className="mx-auto max-w-[1400px] px-4">
           <h1 className="font-display text-[clamp(26px,8.5vw,32px)] font-bold leading-none text-ink [overflow-wrap:break-word] sm:text-[clamp(32px,4.6vw,56px)]">{COPY.casinos.pageTitle}</h1>
           <p className="mt-2 max-w-[680px] text-[17px] text-ink-soft">{COPY.casinos.noResults}</p>
         </div>
@@ -124,7 +124,7 @@ export default async function CasinosPage({ searchParams }: Props) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdScript(graph) }} />
       <main className="pb-12 pt-6 sm:pb-16 sm:pt-10">
-        <div className="mx-auto max-w-[1200px] px-4">
+        <div className="mx-auto max-w-[1400px] px-4">
           <header className="mb-4 sm:mb-8">
             <h1 className="font-display text-[clamp(26px,8.5vw,32px)] font-bold leading-none text-ink [overflow-wrap:break-word] sm:text-[clamp(32px,4.6vw,56px)]">{COPY.casinos.pageTitle}</h1>
             <p className="mt-1 max-w-[680px] text-[15px] text-ink-soft sm:mt-2 sm:text-[17px]">{COPY.casinos.pageDescription}</p>

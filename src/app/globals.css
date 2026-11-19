@@ -152,6 +152,32 @@ body {
    Decorative, and `aria-hidden` on the element — a screen reader would
    otherwise read the same four phrases twice. It stops dead under
    prefers-reduced-motion, where the first copy simply sits there. */
+/* The band's EDGES. The track is always wider than the screen, so whatever is
+   at either end is cut mid-word — the loop is continuous and no scroll
+   position exists where it is not. The mask dissolves those last few
+   centimetres into the page instead of slicing them, which is what makes the
+   cut read as "this is still moving" rather than as a clipped layout.
+
+   `transparent` here is the page ground showing through, not a colour: a
+   gradient to a named colour would have to be repeated for the dark footer
+   and every other ground this band could sit on. */
+.band {
+  --band-fade: clamp(32px, 6vw, 96px);
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 var(--band-fade),
+    #000 calc(100% - var(--band-fade)),
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 var(--band-fade),
+    #000 calc(100% - var(--band-fade)),
+    transparent 100%
+  );
+}
 .band-track {
   display: flex;
   width: max-content;

@@ -149,7 +149,7 @@ export default async function BonusCategoryPage({ params, searchParams }: Props)
       {/* The same measure, grid and card as /special-offers, so arriving here
           from a chip is that listing narrowed rather than a different page. */}
       <main className="pb-12 pt-6 sm:pb-16 sm:pt-10">
-        <div className="mx-auto max-w-[1200px] px-4">
+        <div className="mx-auto max-w-[1400px] px-4">
           <nav className="mb-4 text-[13px] text-muted sm:mb-6">
             <Link href="/" className="inline-block -mx-1 px-1 py-3 -my-3 hover:text-brand">Home</Link>
             {' / '}

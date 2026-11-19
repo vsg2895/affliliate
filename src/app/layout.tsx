@@ -251,7 +251,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
             rendering fault. Blurred, what passes behind the pill stays
             legibly behind it. */}
         <header className="sticky top-0 z-40 bg-cream/80 px-2 py-2.5 backdrop-blur-xl sm:px-4 sm:py-3.5">
-          <div className="mx-auto flex w-full max-w-[1240px] items-center justify-between gap-4 rounded-[20px] bg-paper py-2.5 pl-4 pr-2.5 shadow-[0_8px_30px_rgba(13,16,51,0.08)] sm:rounded-full sm:pl-[18px] sm:pr-3">
+          <div className="mx-auto flex w-full max-w-[1440px] items-center justify-between gap-4 rounded-[20px] bg-paper py-2.5 pl-4 pr-2.5 shadow-[0_8px_30px_rgba(13,16,51,0.08)] sm:rounded-full sm:pl-[18px] sm:pr-3">
             <Logo taglineClassName="hidden xl:block" />
             <nav aria-label="Main navigation" className="hidden lg:block">
               <ul className="flex items-center gap-0.5" role="list">
@@ -299,7 +299,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
             rather than costing 42px of every viewport. */}
         {SUBSCRIBE_ENABLED && (
           <section className="px-2 lg:hidden sm:px-4" aria-label="Newsletter">
-            <div className="mx-auto max-w-[1240px] rounded-[20px] bg-paper px-4 py-3.5 shadow-[0_2px_0_var(--color-line)]">
+            <div className="mx-auto max-w-[1440px] rounded-[20px] bg-paper px-4 py-3.5 shadow-[0_2px_0_var(--color-line)]">
               <NewsletterForm />
             </div>
           </section>
@@ -317,7 +317,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
             both edges, and that ground has to run to the viewport edge or the
             slab appears to float in a frame of a different colour. */}
         <div className="mt-24 px-2 pb-2 sm:px-4 sm:pb-4">
-        <footer className="mx-auto max-w-[1240px] overflow-hidden rounded-[24px] bg-navy text-night-ink sm:rounded-[32px]">
+        <footer className="mx-auto max-w-[1440px] overflow-hidden rounded-[24px] bg-navy text-night-ink sm:rounded-[32px]">
           <div className="px-5 pb-7 pt-10 sm:px-8">
             <div className="flex flex-wrap justify-between gap-10">
               <div className="max-w-[360px] flex-[1_1_260px]">

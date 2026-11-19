@@ -153,7 +153,7 @@ export default async function CategoryDetailPage({ params, searchParams }: Props
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdScript(graph) }} />
 
       <main className="pb-12 pt-6 sm:pb-16 sm:pt-10">
-        <div className="mx-auto max-w-[1200px] px-4">
+        <div className="mx-auto max-w-[1400px] px-4">
           <nav className="mb-4 text-[13px] text-muted sm:mb-6">
             <Link href="/" className="inline-block -mx-1 px-1 py-3 -my-3 hover:text-brand">Home</Link> / <Link href="/categories" className="inline-block -mx-1 px-1 py-3 -my-3 hover:text-brand">Categories</Link> / <span className="text-ink-soft">{category.name}</span>
           </nav>
